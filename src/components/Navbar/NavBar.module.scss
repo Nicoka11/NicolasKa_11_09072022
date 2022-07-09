@@ -1,0 +1,30 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 10rem;
+}
+
+.navigation {
+  display: flex;
+  gap: 2rem;
+  list-style-type: none;
+  font-size: 1.5rem;
+  color: var(--c-primary);
+
+  li {
+    transition: all 0.3s ease;
+    &:hover {
+      transform: translateY(-3px);
+      color: var(--c-primary-hover);
+    }
+  }
+}

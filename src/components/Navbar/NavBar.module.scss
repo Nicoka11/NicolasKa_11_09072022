@@ -6,11 +6,12 @@
 }
 
 .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 6rem;
-    width: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6rem;
+  width: 10rem;
+  flex: none;
 }
 
 .navigation {

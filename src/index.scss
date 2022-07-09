@@ -1,13 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
 
 body {
   margin: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+#root {
+  position: relative;
+  min-height: 100vh;
 }
 
 .container {
@@ -16,13 +21,23 @@ code {
   padding: 0 1rem;
 }
 
+.imageCover {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
 
 ////////// Variables /////////////
 
-
-:root{
-// Colors
-  --c-primary: #FF6060;
+:root {
+  // Colors
+  --c-primary: #ff6060;
   --c-primary-hover: #e24343;
+  --c-background-grey: #f7f7f7;
+
+  // Radii
+  --border-radius-xl-desktop: 25px;
+  --border-radius-xl-mobile: 10px;
+
+  --border-radius-md-desktop: 10px;
 }
- 

@@ -1,0 +1,10 @@
+.grid {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  background-color: var(--c-background-grey);
+  padding: 4rem;
+  border-radius: var(--border-radius-xl-desktop);
+  margin-bottom: 4rem;
+}

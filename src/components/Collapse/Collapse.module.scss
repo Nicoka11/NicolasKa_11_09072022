@@ -1,0 +1,39 @@
+.collapsingContainer {
+  transition: all 0.3s ease-in-out;
+  background-color: var(--c-background-grey);
+  border-radius: var(--border-radius-md-desktop);
+}
+
+.collapsing {
+  padding: 1.5rem 1rem;
+  p {
+    font-size: 1.2rem;
+    color: var(--c-primary);
+  }
+}
+
+.container {
+  overflow: hidden;
+}
+
+.topBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.3rem 1rem;
+  background-color: var(--c-primary);
+  border-radius: var(--border-radius-md-desktop);
+  color: white;
+  width: 100%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  h2 {
+    font-weight: 500;
+  }
+}
+
+.icon {
+  transition: all 0.3s ease-in-out;
+}

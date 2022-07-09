@@ -1,5 +1,14 @@
-const Hero = () => {
-    return <div></div>
-}
+import { HeroProps } from "./Hero.interface";
+import styles from "./Hero.module.scss";
 
-export default Hero
+const Hero = ({ title, image }: HeroProps) => {
+  return (
+    <section className={styles.hero}>
+      {title && <h1>{title}</h1>}
+      <div className={styles.overlay} />
+      <img className="imageCover" src={image.src} alt={image.alt} />
+    </section>
+  );
+};
+
+export default Hero;

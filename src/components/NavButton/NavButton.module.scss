@@ -1,11 +1,32 @@
+.navButtonContainer {
+  position: relative;
+  width: fit-content;
+  overflow: hidden;
+  &:hover .underline {
+    transform: translateX(0);
+  }
+}
+
 .navButton {
   transition: all 0.3s ease;
   &:hover {
-    transform: translateY(-3px);
     color: var(--c-primary-hover);
   }
 }
 
 .active {
-  text-decoration: underline;
+  transform: translateX(0) !important;
+  opacity: 1 !important;
+}
+
+.underline {
+  position: absolute;
+  background-color: var(--c-primary);
+  bottom: 0rem;
+  left: 0;
+  width: 100%;
+  height: 0.2rem;
+  opacity: 0.5;
+  transform: translateX(-101%);
+  transition: transform 0.3s ease-in-out;
 }

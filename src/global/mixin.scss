@@ -1,4 +1,10 @@
 @mixin devices($breakpoint) {
+  @if $breakpoint == large-tablet {
+    @media only screen and (max-width: 940px) {
+      @content;
+    }
+  }
+
   @if $breakpoint == tablet {
     @media only screen and (max-width: 768px) {
       @content;

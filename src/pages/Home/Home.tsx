@@ -1,5 +1,4 @@
 import { Hero, LodgingCard } from "../../components";
-import image from "../../assets/images/home-hero.png";
 import { getAllLodgings } from "../../api/getLodging";
 import styles from "./Home.module.scss";
 
@@ -10,7 +9,7 @@ const HomePage = () => {
       <Hero
         title="Chez vous, partout et ailleurs"
         image={{
-          src: image,
+          src: `${process.env.PUBLIC_URL}/assets/images/home-hero.png`,
           alt: "bienvenue sur Kasa",
         }}
       />

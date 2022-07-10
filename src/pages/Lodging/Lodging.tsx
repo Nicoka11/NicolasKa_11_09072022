@@ -6,11 +6,11 @@ import styles from "./Lodging.module.scss";
 const LodgingPage = () => {
   const { id } = useParams();
   if (!id) {
-    return <Navigate to="/" />;
+    return <Navigate to="/*" />;
   }
   const lodging = getLodging(id);
   if (!lodging) {
-    return <Navigate to="/" />;
+    return <Navigate to="/*" />;
   }
 
   return (

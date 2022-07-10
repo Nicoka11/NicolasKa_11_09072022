@@ -1,7 +1,9 @@
+@import "../../global/mixin.scss";
+
 .collapsingContainer {
   transition: all 0.3s ease-in-out;
   background-color: var(--c-background-grey);
-  border-radius: var(--border-radius-md-desktop);
+  border-radius: var(--border-radius-md);
   overflow: hidden;
 }
 
@@ -24,18 +26,38 @@
   justify-content: space-between;
   padding: 0.3rem 1rem;
   background-color: var(--c-primary);
-  border-radius: var(--border-radius-md-desktop);
+  border-radius: var(--border-radius-md);
   color: white;
   width: 100%;
   outline: none;
   border: none;
+  transition: background-color 0.3s ease;
+  -webkit-tap-highlight-color: transparent;
   cursor: pointer;
+
+  &:active {
+    background-color: var(--c-primary-active);
+  }
 
   h2 {
     font-weight: 500;
+
+    @include devices(mobile) {
+      font-size: 1.3rem;
+    }
   }
 }
 
 .icon {
   transition: all 0.3s ease-in-out;
+  position: relative;
+  width: 2rem;
+
+  span {
+    position: absolute;
+    font-size: 2.5rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }

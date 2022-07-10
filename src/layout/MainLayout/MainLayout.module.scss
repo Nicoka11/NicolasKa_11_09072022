@@ -1,3 +1,13 @@
+@import "../../global/mixin.scss";
+
 .main {
+  padding-top: 4rem;
   padding-bottom: 15.5rem;
+
+  @include devices(tablet) {
+    padding-top: 3rem;
+  }
+  @include devices(mobile) {
+    padding-top: 0;
+  }
 }

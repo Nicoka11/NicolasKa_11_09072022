@@ -1,17 +1,26 @@
+@import "../../global/mixin.scss";
+
 .navContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  @include devices(mobile) {
+    padding: 0.3rem 0;
+  }
 }
 
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 6rem;
   width: 10rem;
   flex: none;
+
+  @include devices(mobile) {
+    height: 6rem;
+    width: 8rem;
+  }
 }
 
 .navigation {
@@ -21,4 +30,8 @@
   font-size: 1.5rem;
   color: var(--c-primary);
   font-weight: 500;
+
+  @include devices(mobile) {
+    font-size: 1rem;
+  }
 }

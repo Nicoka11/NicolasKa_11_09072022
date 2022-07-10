@@ -1,8 +1,9 @@
 .container {
-  border-radius: var(--border-radius-md-desktop);
+  border-radius: var(--border-radius-md);
   overflow: hidden;
   position: relative;
-  height: 100%;
+  height: 21.5rem;
+  min-height: 16rem;
 
   h2 {
     color: white;

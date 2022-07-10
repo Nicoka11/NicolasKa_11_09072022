@@ -10,8 +10,10 @@ const Collapse = ({ title, content, defaultOpen = false }: CollapseProps) => {
 
   useEffect(() => {
     const handleResize = () => {
-      const element = contentRef.current;
-      if (element) setHeight(element.clientHeight);
+      setTimeout(() => {
+        const element = contentRef.current;
+        if (element) setHeight(element.clientHeight);
+      }, 500);
     };
     window.addEventListener("resize", handleResize);
 
@@ -27,12 +29,7 @@ const Collapse = ({ title, content, defaultOpen = false }: CollapseProps) => {
           className={styles.icon}
           style={{ transform: `rotate(${isOpen ? "180" : "0"}deg)` }}
         >
-          <svg xmlns="http://www.w3.org/2000/svg" height="48" width="48">
-            <path
-              fill="white"
-              d="m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z"
-            />
-          </svg>
+          <span className="material-symbols-outlined">expand_more</span>
         </div>
       </button>
       <div

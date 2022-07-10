@@ -1,4 +1,7 @@
+@import "../../global/mixin.scss";
+
 .container {
+  margin-top: 3rem;
   color: var(--c-primary);
   display: flex;
   flex-direction: column;
@@ -8,16 +11,39 @@
 .title {
   font-size: 14rem;
   width: fit-content;
+
+  @include devices(tablet) {
+    font-size: 10rem;
+  }
+  @include devices(mobile) {
+    font-size: 7rem;
+  }
 }
 
 .subtitle {
   font-size: 2rem;
+  font-weight: 500;
   width: fit-content;
+
+  @include devices(tablet) {
+    font-size: 1.5rem;
+  }
+  @include devices(mobile) {
+    max-width: 25ch;
+    font-size: 1.2rem;
+    text-align: center;
+  }
 }
 
 .link {
-  margin-top: 12rem;
-  font-size: 1.5rem;
+  margin-top: 24rem;
+  margin-bottom: 4rem;
+  font-size: 2rem;
   text-decoration: underline;
   width: fit-content;
+
+  @include devices(mobile) {
+    margin-top: 12rem;
+    font-size: 1rem;
+  }
 }

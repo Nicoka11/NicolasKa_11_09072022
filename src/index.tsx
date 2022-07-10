@@ -3,8 +3,8 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { HomePage, AboutPage, LodgingPage, NotFoundPage } from "./pages";
 import reportWebVitals from "./reportWebVitals";
-import "./css-reset.css";
-import "./index.scss";
+import "./global/css-reset.css";
+import "./global/index.scss";
 import { MainLayout } from "./layout";
 
 const root = ReactDOM.createRoot(

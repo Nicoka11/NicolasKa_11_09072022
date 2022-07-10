@@ -1,16 +1,32 @@
+@import "../../global/mixin.scss";
+
 .infoSection {
   margin-top: 2.2rem;
   display: flex;
   justify-content: space-between;
   color: var(--c-primary);
-
+  font-weight: 500;
+  
+  @include devices(mobile) {
+    margin-top: 1rem;
+    flex-direction: column;
+  }
+  
   h1 {
     font-size: 2.2rem;
-    font-weight: 500;
+    font-weight: inherit;
+    
+    @include devices(mobile) {
+      font-size: 1.6rem;
+    }
   }
-
+  
   p {
     font-size: 1.5rem;
+
+    @include devices(mobile) {
+      font-size: 1.1rem;
+    }
   }
 }
 
@@ -26,6 +42,10 @@
   gap: 1rem;
   margin-bottom: 0.8rem;
 
+  @include devices(mobile) {
+    margin-bottom: 0;
+  }
+
   p {
     display: flex;
     flex-direction: column;
@@ -36,16 +56,35 @@
 .hostImage {
   border-radius: 100%;
   overflow: hidden;
-  height: 7rem;
-  width: 7rem;
+  height: 5rem;
+  width: 5rem;
+  @include devices(mobile) {
+    height: 3.5rem;
+    width: 3.5rem;
+  }
 }
 
-.rightinfo {
-  text-align: end;
+.rightInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+
+  @include devices(mobile) {
+    margin-top: 1rem;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .collapseSection {
   margin-top: 2rem;
+  margin-bottom: 4rem;
   display: flex;
   gap: 4rem;
+
+  @include devices(mobile) {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 }

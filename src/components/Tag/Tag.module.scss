@@ -1,9 +1,16 @@
+@import "../../global/mixin.scss";
+
 .tag {
   color: white;
   background-color: var(--c-primary);
-  border-radius: var(--border-radius-md-desktop);
+  border-radius: var(--border-radius-md);
   width: fit-content;
-  padding: .15rem 1.5rem;
+  padding: 0.15rem 1.5rem;
   font-weight: 500;
+  
+  @include devices(mobile) {
+    border-radius: var(--border-radius-sm);
+    padding: 0.1rem 1rem;
+    font-size: .8rem;
+  }
 }
-

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import "./mixin.scss";
 
 body {
   margin: 0;
@@ -28,11 +29,7 @@ code {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 48
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
 ////////// Variables /////////////
@@ -40,12 +37,11 @@ code {
 :root {
   // Colors
   --c-primary: #ff6060;
-  --c-primary-hover: #e24343;
+  --c-primary-active: #e24343;
   --c-background-grey: #f7f7f7;
 
   // Radii
-  --border-radius-xl-desktop: 25px;
-  --border-radius-xl-mobile: 10px;
-
-  --border-radius-md-desktop: 10px;
+  --border-radius-l: 25px;
+  --border-radius-md: 10px;
+  --border-radius-sm: 5px;
 }

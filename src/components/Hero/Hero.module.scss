@@ -1,9 +1,15 @@
+@import "../../global/mixin.scss";
+
 .hero {
-  margin-top: 3rem;
   overflow: hidden;
-  border-radius: var(--border-radius-xl-desktop);
+  border-radius: var(--border-radius-l);
   position: relative;
   height: 15.8rem;
+  
+  @include devices(mobile) {
+    height: 9rem;
+    border-radius: var(--border-radius-md);
+  }
 
   h1 {
     color: white;
@@ -15,6 +21,19 @@
     transform: translate(-50%, -50%);
     z-index: 2;
     width: fit-content;
+    margin: 0 0.2rem;
+
+    @include devices(tablet) {
+      font-size: 2.2rem;
+      line-height: 2rem;
+    }
+
+    @include devices(mobile) {
+      font-size: 1.8rem;
+      max-width: 15ch;
+      transform: translate(0, -50%);
+      left: 1.2rem;
+    }
   }
 }
 
@@ -25,4 +44,10 @@
   height: 100%;
   background-color: rgb(0, 0, 0);
   opacity: 0.3;
+}
+
+.image {
+  @include devices(mobile) {
+    object-position: right;
+  }
 }

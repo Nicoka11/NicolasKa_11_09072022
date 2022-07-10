@@ -6,7 +6,11 @@ const Hero = ({ title, image }: HeroProps) => {
     <section className={styles.hero}>
       {title && <h1>{title}</h1>}
       <div className={styles.overlay} />
-      <img className="imageCover" src={image.src} alt={image.alt} />
+      <img
+        className={`imageCover ${styles.image}`}
+        src={image.src}
+        alt={image.alt}
+      />
     </section>
   );
 };

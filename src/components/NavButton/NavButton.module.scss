@@ -1,3 +1,5 @@
+@import "../../global/mixin.scss";
+
 .navButtonContainer {
   position: relative;
   width: fit-content;
@@ -22,4 +24,9 @@
   opacity: 0.5;
   transform: translateX(-101%);
   transition: transform 0.3s ease-in-out;
+  
+  @include devices(mobile) {
+    height: 0.08rem;
+    bottom: 0.15rem;
+  }
 }

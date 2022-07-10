@@ -5,7 +5,7 @@ const NotFoundPage = () => {
     <div className={styles.container}>
       <h1 className={styles.title}>404</h1>
       <h2 className={styles.subtitle}>
-        Oups! La page que vous avez demandé n'existe pas.
+        Oups! La page que vous demandez n'existe pas.
       </h2>
       <a href="/" className={styles.link}>
         Retourner sur la page d'accueil

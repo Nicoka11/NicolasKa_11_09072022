@@ -4,11 +4,12 @@
   color: white;
   background-color: var(--c-primary);
   border-radius: var(--border-radius-md);
-  width: fit-content;
+  height: fit-content;
+  width: max-content;
   padding: 0.15rem 1.5rem;
   font-weight: 500;
   
-  @include devices(mobile) {
+  @include devices(tablet) {
     border-radius: var(--border-radius-sm);
     padding: 0.1rem 1rem;
     font-size: .8rem;

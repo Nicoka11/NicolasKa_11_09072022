@@ -11,8 +11,14 @@
   span {
     font-size: 2.4rem;
 
+    @include devices(tablet) {
+      font-size: 1.8rem;
+    }
     @include devices(mobile) {
       font-size: 1.6rem;
+    }
+    @include devices(small-mobile) {
+      font-size: 1.2rem;
     }
   }
 }

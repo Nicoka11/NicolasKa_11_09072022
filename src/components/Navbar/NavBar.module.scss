@@ -21,6 +21,11 @@
     height: 6rem;
     width: 8rem;
   }
+
+  @include devices(small-mobile) {
+    height: 3rem;
+    width: 5rem;
+  }
 }
 
 .navigation {
@@ -33,5 +38,9 @@
 
   @include devices(mobile) {
     font-size: 1rem;
+  }
+
+  @include devices(small-mobile) {
+    gap: 1rem;
   }
 }

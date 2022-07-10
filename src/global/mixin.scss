@@ -10,4 +10,10 @@
       @content;
     }
   }
+
+  @if $breakpoint == small-mobile {
+    @media only screen and (max-width: 330px) {
+      @content;
+    }
+  }
 }

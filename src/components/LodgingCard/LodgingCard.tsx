@@ -3,7 +3,7 @@ import styles from "./LodgingCard.module.scss";
 
 const LodgingCard = ({ lodging }: LodgingCardProps) => {
   return (
-    <a href={lodging.id}>
+    <a href={`/lodgings/${lodging.id}`}>
       <article className={styles.container}>
         <h2>{lodging.title}</h2>
         <div className={styles.overlay} />

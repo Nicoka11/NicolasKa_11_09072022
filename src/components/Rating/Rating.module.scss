@@ -1,0 +1,11 @@
+.rating {
+  display: flex;
+  gap: 0.5rem;
+  span {
+    font-size: 2.4rem;
+  }
+}
+
+.disabled {
+  color: var(--c-background-grey);
+}

@@ -1,5 +1,17 @@
-const NotFoundPage = () => {
-    return <div></div>
-}
+import styles from "./NotFound.module.scss";
 
-export default NotFoundPage
+const NotFoundPage = () => {
+  return (
+    <div className={styles.container}>
+      <h1 className={styles.title}>404</h1>
+      <h2 className={styles.subtitle}>
+        Oups! La page que vous avez demandé n'existe pas.
+      </h2>
+      <a href="/" className={styles.link}>
+        Retourner sur la page d'accueil
+      </a>
+    </div>
+  );
+};
+
+export default NotFoundPage;

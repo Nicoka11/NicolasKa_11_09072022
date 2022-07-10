@@ -2,11 +2,12 @@
   transition: all 0.3s ease-in-out;
   background-color: var(--c-background-grey);
   border-radius: var(--border-radius-md-desktop);
+  overflow: hidden;
 }
 
 .collapsing {
   padding: 1.5rem 1rem;
-  p {
+  div {
     font-size: 1.2rem;
     color: var(--c-primary);
   }
@@ -14,6 +15,7 @@
 
 .container {
   overflow: hidden;
+  width: 100%;
 }
 
 .topBar {

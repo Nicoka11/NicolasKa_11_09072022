@@ -6,7 +6,7 @@ import styles from "./Collapse.module.scss";
 const Collapse = ({ title, content, defaultOpen = false }: CollapseProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(defaultOpen);
   const contentRef = useRef<HTMLDivElement>(null);
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState<number>(0);
 
   useEffect(() => {
     const handleResize = () => {
@@ -40,7 +40,7 @@ const Collapse = ({ title, content, defaultOpen = false }: CollapseProps) => {
         style={{ height: isOpen ? height : "0px" }}
       >
         <div className={styles.collapsing} ref={contentRef}>
-          <p>{content}</p>
+          <div>{content}</div>
         </div>
       </div>
     </div>

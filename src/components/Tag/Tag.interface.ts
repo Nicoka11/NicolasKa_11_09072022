@@ -1,1 +1,5 @@
-export interface NotFoundProps {}
+import { ReactNode } from "react";
+
+export interface TagProps {
+  children: ReactNode;
+}

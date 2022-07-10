@@ -7,13 +7,6 @@
   }
 }
 
-.navButton {
-  transition: all 0.3s ease;
-  &:hover {
-    color: var(--c-primary-hover);
-  }
-}
-
 .active {
   transform: translateX(0) !important;
   opacity: 1 !important;

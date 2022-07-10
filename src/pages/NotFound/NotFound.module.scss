@@ -1,0 +1,23 @@
+.container {
+  color: var(--c-primary);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 14rem;
+  width: fit-content;
+}
+
+.subtitle {
+  font-size: 2rem;
+  width: fit-content;
+}
+
+.link {
+  margin-top: 12rem;
+  font-size: 1.5rem;
+  text-decoration: underline;
+  width: fit-content;
+}

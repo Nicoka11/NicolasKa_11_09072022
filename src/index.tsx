@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import { HomePage, AboutPage } from "./pages";
+import { HomePage, AboutPage, LodgingPage, NotFoundPage } from "./pages";
 import reportWebVitals from "./reportWebVitals";
 import "./css-reset.css";
 import "./index.scss";
@@ -17,6 +17,8 @@ root.render(
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/lodgings/:id" element={<LodgingPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </MainLayout>
     </BrowserRouter>

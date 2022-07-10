@@ -1,4 +1,5 @@
-import data from "../data.json";
+import { rating } from "../components";
+import data from "../data";
 
 export type lodging = {
   id: string;
@@ -10,7 +11,7 @@ export type lodging = {
     name: string;
     picture: string;
   };
-  rating: string;
+  rating: rating;
   location: string;
   equipments: string[];
   tags: string[];

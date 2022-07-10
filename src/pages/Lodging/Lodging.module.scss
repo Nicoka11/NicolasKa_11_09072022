@@ -1,0 +1,51 @@
+.infoSection {
+  margin-top: 2.2rem;
+  display: flex;
+  justify-content: space-between;
+  color: var(--c-primary);
+
+  h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+.tagList {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 0.7rem;
+}
+
+.host {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+
+  p {
+    display: flex;
+    flex-direction: column;
+    text-align: end;
+  }
+}
+
+.hostImage {
+  border-radius: 100%;
+  overflow: hidden;
+  height: 7rem;
+  width: 7rem;
+}
+
+.rightinfo {
+  text-align: end;
+}
+
+.collapseSection {
+  margin-top: 2rem;
+  display: flex;
+  gap: 4rem;
+}

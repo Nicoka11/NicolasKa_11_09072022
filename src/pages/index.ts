@@ -1,8 +1,6 @@
 import HomePage from "./Home";
 import AboutPage from "./About";
 import NotFoundPage from "./NotFound";
-import Collapse from "../components/Collapse";
-import { CollapseProps } from "../components/Collapse/Collapse.interface";
+import LodgingPage from "./Lodging";
 
-export { HomePage, AboutPage, NotFoundPage, Collapse };
-export type { CollapseProps };
+export { HomePage, AboutPage, NotFoundPage, LodgingPage };

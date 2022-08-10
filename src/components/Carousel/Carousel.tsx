@@ -6,12 +6,18 @@ const Carousel = ({ images }: CarouselProps) => {
   const [index, setIndex] = useState<number>(0);
 
   const increment = () => {
-    if (index === images.length - 1) return;
+    if (index === images.length - 1) {
+      setIndex(0);
+      return;
+    }
     setIndex(index + 1);
   };
 
   const decrement = () => {
-    if (index === 0) return;
+    if (index === 0) {
+      setIndex(images.length - 1);
+      return;
+    }
     setIndex(index - 1);
   };
   return (

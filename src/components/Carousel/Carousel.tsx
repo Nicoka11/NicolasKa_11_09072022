@@ -22,24 +22,28 @@ const Carousel = ({ images }: CarouselProps) => {
   };
   return (
     <section className={styles.carouselContainer}>
-      <button className={styles.button} onClick={decrement}>
-        <span className={`material-symbols-outlined ${styles.icon}`}>
-          chevron_left
-        </span>
-      </button>
-      <div className={styles.counter}>
-        <div className={styles.currentIndex}>
-          {images.map((_, i) => (
-            <p
-              key={`counter-${i}`}
-              style={{ transform: `translateY(${i * 100 - 100 * index}%)` }}
-            >
-              {i + 1}
-            </p>
-          ))}
-        </div>
-        <p>/ {images.length}</p>
-      </div>
+      {images.length > 1 && (
+        <>
+          <button className={styles.button} onClick={decrement}>
+            <span className={`material-symbols-outlined ${styles.icon}`}>
+              chevron_left
+            </span>
+          </button>
+          <div className={styles.counter}>
+            <div className={styles.currentIndex}>
+              {images.map((_, i) => (
+                <p
+                  key={`counter-${i}`}
+                  style={{ transform: `translateY(${i * 100 - 100 * index}%)` }}
+                >
+                  {i + 1}
+                </p>
+              ))}
+            </div>
+            <p>/ {images.length}</p>
+          </div>
+        </>
+      )}
       {images.map((image, i) => (
         <img
           className={`imageCover ${styles.carouselImage}`}
@@ -49,11 +53,13 @@ const Carousel = ({ images }: CarouselProps) => {
           style={{ transform: `translateX(${i * 100 - 100 * index}%)` }}
         />
       ))}
-      <button className={styles.button} onClick={increment}>
-        <span className={`material-symbols-outlined ${styles.icon}`}>
-          chevron_right
-        </span>
-      </button>
+      {images.length > 1 && (
+        <button className={styles.button} onClick={increment}>
+          <span className={`material-symbols-outlined ${styles.icon}`}>
+            chevron_right
+          </span>
+        </button>
+      )}
     </section>
   );
 };
